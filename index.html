@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>GUI Prototyping</title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+  <body>
+    <div class="header" id="idHeader">
+      <div class="tab" id="idTab1">
+        <button class="buttonTabs" id="idDialer">Dialer</button>
+      </div>
+      <div class="tab" id="idTab2">
+        <button class="buttonTabs" id="idContactList">Contact List</button>
+      </div>
+      <div class="tab" id="idTab3">
+        <button class="buttonTabs" id="idAddContact">Add Contact</button>
+      </div>
+    </div>
+    <div class="content" id="idContent">
+      <div class="screens" id="idContent_Dialer">
+
+        <h2> Dialer </h2>
+
+        <hr />
+
+        <input id="idDialerNumber">
+
+        <button class="phone" id="phoneNumber1">1</button>
+        <button class="phone" id="phoneNumber2">2</button>
+        <button class="phone" id="phoneNumber3">3</button>
+        <button class="phone" id="phoneNumber4">4</button>
+        <button class="phone" id="phoneNumber5">5</button>
+        <button class="phone" id="phoneNumber6">6</button>
+        <button class="phone" id="phoneNumber7">7</button>
+        <button class="phone" id="phoneNumber8">8</button>
+        <button class="phone" id="phoneNumber9">9</button>
+        <button class="phone" id="specialChar">*</button>
+        <button class="phone" id="phoneNumber0">0</button>
+        <button class="phone" id="pound">#</button>
+
+        <button class="bottomDialerButtons" id="idDialerDial">Dial</button>
+        <button class="bottomDialerButtons" id="idDialerClear">Clear</button>
+      </div>
+      <div class="screens" id="idContent_ContactList">
+        <h2> Contact List </h2>
+
+        <hr />
+
+        <button class="contactName" id="idRobertDrake">Robert Drake</button>
+        <button class="contactName" id="idEmmaFrost">Emma Frost</button>
+        <button class="contactName" id="idDoreenGreen">Doreen Green</button>
+        <button class="contactName" id="idJeanGrey">Jean Grey</button>
+        <button class="contactName" id="idJamesHowlett">James Howlett</button>
+        <button class="contactName" id="idOroroMunroe">Ororo Munroe</button>
+        <button class="contactName" id="idKatherinePryde">Katherine Pryde</button>
+        <button class="contactName" id="idPiotrRasputin">Piotr Rasputin</button>
+        <button class="contactName" id="idScottSummers">Scott Summers</button>
+        <button class="contactName" id="idKurtWagner">Kurt Wagner</button>
+        <button class="contactName" id="idWarrenWorthington">Warren Worthington</button>
+        <button class="contactName" id="idCharlesXavier">Charles Xavier</button>
+      </div>
+      <div class="screens" id="idContent_AddContact">
+        <h2> Add Contact </h2>
+
+        <hr />
+        <div style="width:50%">
+
+          <label class="contactLabel" for="idNewName"> <h4>Name</h4> </label>
+          <input class="contactBox" id="idNewName" placeholder="Jane Smith">
+
+          <label class="contactLabel" for="idNewNumber"> <h4>Phone Number</h4> </label>
+          <input class="contactBox" id="idNewNumber" placeholder="123456789">
+
+          <label class="contactLabel" for="idNewEmail"> <h4>Email Address</h4> </label>
+          <input class="contactBox" id="idNewEmail" placeholder="jane.smith@colorado.edu">
+
+          <button class="bottomContactButtons" id="idAddContactButton">Add Contact</button>
+          <button class="bottomContactButtons" id="idClearContactButton">Clear</button>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+  <script src="phone.js"></script>
+</html>
