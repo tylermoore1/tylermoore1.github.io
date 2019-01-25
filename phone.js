@@ -21,3 +21,29 @@ $("#idAddContact").click(function() { // when "button_id" is clicked
   $("#idContent_Dialer").hide(); // hide the element with ID "otherElement"
   $("#idContent_ContactList").hide();
 });
+
+$(".phone").click(function() {
+	var phone_number = $("#idDialerNumber").val();
+	//do 12 because phone numbers are length of 10 plus two dashes
+	if (phone_number.length == 12)
+	{
+		alert("Phone number is already full");
+	}
+	else
+	{
+		if (phone_number.length == 3 || phone_number.length == 7)
+		{
+			phone_number += "-";
+		}
+		var number = this.id;
+		number = number.slice(-1);
+		phone_number += number;
+
+		$("#idDialerNumber").val(phone_number);
+	}
+
+});
+
+$("#idDialerClear").click(function() {
+	$("#idDialerNumber").val("");
+});
